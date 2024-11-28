@@ -12,14 +12,7 @@ header {
   margin: auto;
   border-radius: 30px;
   border-radius: 30px;
-  margin-top: 60px;
-}
-.aboutpage {
-  text-align: center;
-  border: 1px solid #00a676;
-  background-image: url("../assets/images/aboutimage.jpg");
-  background-repeat: no-repeat;
-  margin-top: -31px;
+  margin-top: 4%;
 }
 
 .history {
@@ -96,7 +89,7 @@ h3 {
   text-decoration: underline;
 }
 figcaption {
-  margin-left: 10px;
+  margin-left: 60px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
