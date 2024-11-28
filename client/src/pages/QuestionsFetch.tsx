@@ -135,10 +135,9 @@ const QuestionsForm = () => {
 
     if (!["people", "duration"].includes(key)) {
       const filteredCountries = filterCountries(updatedCriteria);
- 
+
       setRemainingCountries(filteredCountries.map((c) => c.id));
       setRemainingCountryNames(filteredCountries.map((c) => c.name));
-
     }
   };
 
@@ -196,7 +195,6 @@ const QuestionsForm = () => {
             ))}
           </ul>
           <h3>
-
             <span className="pays-titre">Pays correspondants :</span>
             <br />
             {remainingCountryNames.length > 0 ? (
@@ -206,7 +204,6 @@ const QuestionsForm = () => {
             ) : (
               <span className="pays-noms">Aucun</span>
             )}
-
           </h3>
         </div>
       ) : (
@@ -242,7 +239,6 @@ const QuestionsForm = () => {
                 </div>
               </div>
               <div className="validate-container">
-
                 {currentQuestionIndex > 0 && (
                   <button
                     type="button"
