@@ -64,7 +64,7 @@ const questionsImg = {
   duration: [{ img: "week.png" }, { img: "weekend.png" }, { img: "weeks.png" }],
 };
 
-const QuestionsFetch = () => {
+const QuestionsForm = () => {
   const [selectedCriteria, setSelectedCriteria] = useState<
     Record<string, string[]>
   >({});
@@ -135,8 +135,10 @@ const QuestionsFetch = () => {
 
     if (!["people", "duration"].includes(key)) {
       const filteredCountries = filterCountries(updatedCriteria);
+ 
       setRemainingCountries(filteredCountries.map((c) => c.id));
       setRemainingCountryNames(filteredCountries.map((c) => c.name));
+
     }
   };
 
@@ -194,6 +196,7 @@ const QuestionsFetch = () => {
             ))}
           </ul>
           <h3>
+
             <span className="pays-titre">Pays correspondants :</span>
             <br />
             {remainingCountryNames.length > 0 ? (
@@ -203,6 +206,7 @@ const QuestionsFetch = () => {
             ) : (
               <span className="pays-noms">Aucun</span>
             )}
+
           </h3>
         </div>
       ) : (
@@ -238,6 +242,7 @@ const QuestionsFetch = () => {
                 </div>
               </div>
               <div className="validate-container">
+
                 {currentQuestionIndex > 0 && (
                   <button
                     type="button"
@@ -247,6 +252,7 @@ const QuestionsFetch = () => {
                     Précédent
                   </button>
                 )}
+
                 <button type="button" className="validate" onClick={handleNext}>
                   {currentQuestionIndex === questionKeys.length - 1
                     ? "Terminer"
@@ -261,4 +267,4 @@ const QuestionsFetch = () => {
   );
 };
 
-export default QuestionsFetch;
+export default QuestionsForm;

@@ -19,7 +19,7 @@ function Home() {
           Découvrez votre prochaine destination de rêve.
         </p>
         <img
-          src="https://i.ibb.co/tQZYCfj/Gif.gif"
+          src="https://i.ibb.co/PcwWsdS/Gif-travel.gif"
           alt="Animation du voyage"
           className="home-animation"
         />
